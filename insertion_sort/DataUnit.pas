@@ -30,10 +30,10 @@ var
   lhsIntRepr, rhsIntRepr: integer;
 begin
   ExtractDateParts(lhs.Birth, d, m, y);
-  lhsIntRepr := y * 1000 + m * 100 + d;
+  lhsIntRepr := y * 10000 + m * 100 + d;
 
   ExtractDateParts(rhs.Birth, d, m, y);
-  rhsIntRepr := y * 1000 + m * 100 + d;
+  rhsIntRepr := y * 10000 + m * 100 + d;
 
   IsGreater := lhsIntRepr > rhsIntRepr;
 
